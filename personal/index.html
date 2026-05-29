@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>공희진과의 채팅</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="phone-wrap">
+  <header class="chat-header">
+    <button class="back" type="button" onclick="location.href='../team/index.html'">‹</button>
+    <div class="header-avatar">
+      <img alt="공희진 프로필" data-profile-image="heejin">
+    </div>
+    <div class="header-info">
+      <div class="header-name">공희진</div>
+      <div class="header-status">시스템 안정성을 추구하는 성장형 개발자</div>
+    </div>
+    <div class="header-icons">
+      <span>🔍</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <main class="chat-body" id="chatBody">
+    <div class="date-divider"><span>2026년 5월 29일 금요일</span></div>
+    <section class="profile-card">
+      <img alt="유상록 프로필" data-profile-image="heejin">
+      <div>
+        <strong>공희진 · PORTFLIX</strong>
+        <p>유지보수성과 확장성을 고려한 서비스를 개발하며 지속적인 성장을 추구합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="quick-replies" aria-label="빠른 질문">
+    <button data-question="자기소개">자기소개</button>
+    <button data-question="기술스택">기술스택</button>
+    <button data-question="프로젝트">프로젝트</button>
+    <button data-question="관심사">관심사</button>
+    <button data-question="연락처">연락처</button>
+    <button data-question="포트폴리오">포트폴리오</button>
+  </section>
+
+  <footer class="chat-input-bar">
+    <span class="input-icon">+</span>
+    <input class="input-field" id="inputField" placeholder="공희진에게 물어보기"/>
+    <button class="send-btn" id="sendBtn" type="button">➤</button>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
